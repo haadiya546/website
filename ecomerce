@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR-Easy shop - Premium Shopping Experience</title>
+    <!-- Tailwind CSS and FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -22,6 +23,8 @@
         }
     </script>
     <style>
+        /* HTML: Structure and content */
+        /* CSS: Styling and layout */
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
         
         body {
@@ -71,6 +74,7 @@
     </style>
 </head>
 <body class="antialiased text-gray-800">
+    <!-- HTML: Page structure -->
     <!-- Header -->
     <header class="hero-pattern text-white">
         <div class="container mx-auto px-4 py-6">
@@ -166,7 +170,7 @@
         <div class="container mx-auto px-4">
             <h2 class="title-font text-3xl font-bold text-center mb-12">Featured Products</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="productsContainer">
-                <!-- Products will be dynamically added here -->
+                <!-- Products will be dynamically added here by JavaScript -->
             </div>
         </div>
     </section>
@@ -291,21 +295,23 @@
     </div>
 
     <script>
-        // Sample product data
+        // JavaScript: Dynamic functionality
+
+        // Sample product data (fixed image URLs and removed non-HTML/JS artifacts)
         let products = [
             {
                 id: 1,
                 name: "Matte Lipstick Set",
                 category: "makeup",
                 price: 2499,
-                image: "https://images.unsplash.com/photo-159646极速赛车开奖结果查询官网 2502278-27bfdc403348?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             },
             {
                 id: 2,
                 name: "Wireless Earbuds",
                 category: "mobile",
                 price: 5999,
-                image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=MnwxMjA3极速赛车开奖结果查询官网 fDB8MHxzZWFyY2h8Mnx8ZWFyYnVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWFyYnVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             },
             {
                 id: 3,
@@ -326,7 +332,7 @@
                 name: "Smart Home Hub",
                 category: "home",
                 price: 12999,
-                image: "极速赛车开奖结果查询官网 https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnQlMjBob21lfGVufDB8极速赛车开奖结果查询官网 fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnQlMjBob21lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
             },
             {
                 id: 6,
@@ -375,7 +381,7 @@
                             <span class="bg-primary text-white text-xs px-2 py-1 rounded-full">${product.category}</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <p class="text-lg font-bold text-primary">$${product.price.toFixed(2)}</p>
+                            <p class="text-lg font-bold text-primary">PKR ${product.price.toLocaleString()}</p>
                             <button class="bg-light w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition">
                                 <i class="fas fa-shopping-cart"></i>
                             </button>
